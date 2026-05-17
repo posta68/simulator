@@ -1,21 +1,21 @@
 const types = {
-  pragmatiker: {
-    title: "Der Pragmatiker",
+  Autonomer: {
+    title: "Der Autonome",
     description:
       "Du setzt auf machbare Lösungen, Kompromisse und Stabilität. Ideale sind dir wichtig, aber am Ende zählt für dich, was realistisch umsetzbar ist."
   },
-  idealistin: {
-    title: "Die Idealistin",
+  Bündnis: {
+    title: "Der Bündnis Ultra",
     description:
       "Du orientierst dich stark an Werten, Gerechtigkeit und gesellschaftlicher Veränderung. Politik soll für dich nicht nur verwalten, sondern verbessern."
   },
-  freiheitsmensch: {
-    title: "Der Freiheitsmensch",
+  Organizerin: {
+    title: "Die Organizerin",
     description:
       "Dir sind individuelle Freiheit, Eigenverantwortung und möglichst wenig Bevormundung besonders wichtig."
   },
-  sicherheitsmensch: {
-    title: "Der Sicherheitsmensch",
+  Anarcho: {
+    title: "Der Anarcho",
     description:
       "Du legst großen Wert auf Ordnung, Verlässlichkeit und Schutz vor Risiken. Veränderung sollte aus deiner Sicht kontrolliert und vorsichtig passieren."
   }
@@ -23,170 +23,65 @@ const types = {
 
 const questions = [
   {
-    text: "Was ist dir in der Politik am wichtigsten?",
+    text: "Wie bewertest du die letzte Aktion der Vulkangruppe?",
     answers: [
       {
-        text: "Dass konkrete Probleme pragmatisch gelöst werden.",
-        scores: { pragmatiker: 2 }
+        text: "Endlich mal eine Aktion die bei schädlichen Unternehmen ordentlichen Schaden angerichtet hat",
+        scores: { Autonomer: 2 }
       },
       {
-        text: "Dass die Gesellschaft gerechter wird.",
-        scores: { idealistin: 2 }
+        text: "Grundsätzlich gut, aber hätten die das mal mit den Omas gegen Rechts gemacht",
+        scores: { Bündnis: 2 }
       },
       {
-        text: "Dass Menschen möglichst frei entscheiden können.",
-        scores: { freiheitsmensch: 2 }
+        text: "So eine dumme Aktion! Hat uns als Linke total geschadet",
+        scores: { Organizerin: 2 }
       },
       {
-        text: "Dass Sicherheit und Ordnung gewährleistet bleiben.",
-        scores: { sicherheitsmensch: 2 }
+        text: "Vulkan? Hier in Berlin? Dachte immer hier ist Sumpfgebiet.",
+        scores: { Anarcho: 2 }
       }
     ]
   },
   {
-    text: "Wie sollte der Staat mit wirtschaftlicher Ungleichheit umgehen?",
+    text: "Ein Bündnis mit der SPD ist aus deiner Sicht...",
     answers: [
       {
-        text: "Gezielt eingreifen, aber ohne die Wirtschaft zu überfordern.",
-        scores: { pragmatiker: 2 }
+        text: "grundsätzlich nicht auszuschließen",
+        scores: { Autonomer: 2 }
       },
       {
-        text: "Stark umverteilen, damit Chancen fairer verteilt sind.",
-        scores: { idealistin: 2 }
+        text: "immer abzulehnen!",
+        scores: { Bündnis: 2 }
       },
       {
-        text: "Sich möglichst zurückhalten und Eigeninitiative fördern.",
-        scores: { freiheitsmensch: 2 }
+        text: "kann bei allem außer Asylpoltik erwogen werden.",
+        scores: { Organizerin: 2 }
       },
       {
-        text: "Vor allem soziale Stabilität sichern und Extreme vermeiden.",
-        scores: { sicherheitsmensch: 2 }
+        text: "...wer hat uns verraten?",
+        scores: { Anarcho: 2 }
       }
     ]
   },
   {
-    text: "Was ist deine Haltung zu gesellschaftlichem Wandel?",
+    text: "Wenn wir es in die Tagesschau geschafft haben, dann...",
     answers: [
       {
-        text: "Wandel ist gut, solange er realistisch gestaltet wird.",
-        scores: { pragmatiker: 2 }
+        text: "...ist die Aktion erfolgreich gewesen",
+        scores: { Bündnis: 2 }
       },
       {
-        text: "Wandel ist dringend nötig und sollte mutig vorangetrieben werden.",
-        scores: { idealistin: 2 }
+        text: "...kommt es immer noch darauf an, was darin gesagt wird.",
+        scores: { Organizerin: 2 }
       },
       {
-        text: "Wandel sollte aus der Gesellschaft selbst kommen, nicht vom Staat.",
-        scores: { freiheitsmensch: 2 }
+        text: "...ist mir das eigentlich egal",
+        scores: { Anarcho: 2 }
       },
       {
-        text: "Wandel sollte langsam und kontrolliert passieren.",
-        scores: { sicherheitsmensch: 2 }
-      }
-    ]
-  },
-  {
-    text: "Wie sollte Klimapolitik aussehen?",
-    answers: [
-      {
-        text: "Wirksam, aber wirtschaftlich und sozial gut abgefedert.",
-        scores: { pragmatiker: 2 }
-      },
-      {
-        text: "Sehr ambitioniert, auch wenn es kurzfristig unbequem wird.",
-        scores: { idealistin: 2 }
-      },
-      {
-        text: "Über Innovation, Marktmechanismen und persönliche Verantwortung.",
-        scores: { freiheitsmensch: 2 }
-      },
-      {
-        text: "Planbar und sicher, ohne abrupte Belastungen für Bürger.",
-        scores: { sicherheitsmensch: 2 }
-      }
-    ]
-  },
-  {
-    text: "Welche Aussage passt am ehesten zu dir?",
-    answers: [
-      {
-        text: "Gute Politik braucht Kompromisse.",
-        scores: { pragmatiker: 2 }
-      },
-      {
-        text: "Gute Politik braucht Haltung.",
-        scores: { idealistin: 2 }
-      },
-      {
-        text: "Gute Politik lässt Menschen in Ruhe.",
-        scores: { freiheitsmensch: 2 }
-      },
-      {
-        text: "Gute Politik schützt vor Chaos.",
-        scores: { sicherheitsmensch: 2 }
-      }
-    ]
-  },
-  {
-    text: "Wie siehst du staatliche Regeln im Alltag?",
-    answers: [
-      {
-        text: "Sinnvoll, wenn sie ein konkretes Problem lösen.",
-        scores: { pragmatiker: 2 }
-      },
-      {
-        text: "Notwendig, wenn sie Schwächere schützen.",
-        scores: { idealistin: 2 }
-      },
-      {
-        text: "Oft übertrieben; Menschen sollten selbst entscheiden.",
-        scores: { freiheitsmensch: 2 }
-      },
-      {
-        text: "Wichtig, damit Zusammenleben funktioniert.",
-        scores: { sicherheitsmensch: 2 }
-      }
-    ]
-  },
-  {
-    text: "Was überzeugt dich in einer politischen Debatte am meisten?",
-    answers: [
-      {
-        text: "Ein realistischer Plan.",
-        scores: { pragmatiker: 2 }
-      },
-      {
-        text: "Ein klares moralisches Ziel.",
-        scores: { idealistin: 2 }
-      },
-      {
-        text: "Ein Argument für mehr Freiheit.",
-        scores: { freiheitsmensch: 2 }
-      },
-      {
-        text: "Ein Versprechen von Stabilität.",
-        scores: { sicherheitsmensch: 2 }
-      }
-    ]
-  },
-  {
-    text: "Wie sollte Politik mit Krisen umgehen?",
-    answers: [
-      {
-        text: "Schnell handeln, aber laufend nachjustieren.",
-        scores: { pragmatiker: 2 }
-      },
-      {
-        text: "Die Krise nutzen, um grundlegende Probleme zu lösen.",
-        scores: { idealistin: 2 }
-      },
-      {
-        text: "Nicht unnötig in die Freiheit der Menschen eingreifen.",
-        scores: { freiheitsmensch: 2 }
-      },
-      {
-        text: "Klare Regeln und starke Institutionen schaffen.",
-        scores: { sicherheitsmensch: 2 }
+        text: "...hoffe ich, dass nicht nur die bunte Demo gezeigt wird.",
+        scores: { Autonomer: 2 }
       }
     ]
   }
