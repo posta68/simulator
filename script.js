@@ -2,12 +2,12 @@ const types = {
   Autonomer: {
     title: "Die Autonome unter Postautonomen",
     description:
-      "Ohne Autonome auch keine Postautonomen. Denn ohne Widerspruch geht es nicht. Wo immer das Wort "ZU+" fällt springst du in die Debatte ein und wo immer die lokale Selbstorganisierung möglich ist, statt Organizing Ansprachen wedelst du ganz weit oben mit. Stay strong, wir brauchen dich!"
+      "Ohne Autonome auch keine Postautonomen. Denn ohne Widerspruch geht es nicht. Wo immer das Wort ZU+ fällt springst du in die Debatte ein und wo immer die lokale Selbstorganisierung möglich ist, statt Organizing Ansprachen wedelst du ganz weit oben mit. Stay strong, wir brauchen dich!"
   },
   Bündnis: {
-    title: "Der Bündnis + ZU Ultra",
+    title: "Der Bündnis Ultra",
     description:
-      "Egal welche Politik: Hauptsachen breite Bündnisse und einen ordentlichen zivilen Ungerhorsam auf der Straße. "Scharnier" und "Hegemonie" sind deine häufigsten Worte im Plenum und du träumst immer noch davon, dass Herbert Grönemeyer endlich mal bei Blockaden spielt."
+      "Egal welche Politik: Hauptsachen breite Bündnisse und einen ordentlichen zivilen Ungerhorsam auf der Straße. Scharnier und Hegemonie sind deine häufigsten Worte im Plenum und du träumst immer noch davon, dass Herbert Grönemeyer endlich mal bei Blockaden spielt."
   },
   Organizerin: {
     title: "Die Organizerin",
