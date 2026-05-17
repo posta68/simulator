@@ -1,23 +1,23 @@
 const types = {
   Autonomer: {
-    title: "Der Autonome",
+    title: "Die Autonome unter Postautonomen",
     description:
-      "Du setzt auf machbare Lösungen, Kompromisse und Stabilität. Ideale sind dir wichtig, aber am Ende zählt für dich, was realistisch umsetzbar ist."
+      "Ohne Autonome auch keine Postautonomen. Denn ohne Widerspruch geht es nicht. Wo immer das Wort "ZU+" fällt springst du in die Debatte ein und wo immer die lokale Selbstorganisierung möglich ist, statt Organizing Ansprachen wedelst du ganz weit oben mit. Stay strong, wir brauchen dich!"
   },
   Bündnis: {
-    title: "Der Bündnis Ultra",
+    title: "Der Bündnis + ZU Ultra",
     description:
-      "Du orientierst dich stark an Werten, Gerechtigkeit und gesellschaftlicher Veränderung. Politik soll für dich nicht nur verwalten, sondern verbessern."
+      "Egal welche Politik: Hauptsachen breite Bündnisse und einen ordentlichen zivilen Ungerhorsam auf der Straße. "Scharnier" und "Hegemonie" sind deine häufigsten Worte im Plenum und du träumst immer noch davon, dass Herbert Grönemeyer endlich mal bei Blockaden spielt."
   },
   Organizerin: {
     title: "Die Organizerin",
     description:
-      "Dir sind individuelle Freiheit, Eigenverantwortung und möglichst wenig Bevormundung besonders wichtig."
+      "Die Organisierung von Menschen liegt dir am Herzen. Dass das nicht früher passiert ist, siehst du als Problem. Umso mehr müssen wir jetzt alles daran setzen, dass wir damit in den aktuellen Zeiten Menschen ansprechen."
   },
   Anarcho: {
     title: "Der Anarcho",
     description:
-      "Du legst großen Wert auf Ordnung, Verlässlichkeit und Schutz vor Risiken. Veränderung sollte aus deiner Sicht kontrolliert und vorsichtig passieren."
+      "Dir sind Ordnung und Struktur eigentlich egal und weißt auch nicht so richtig, wie du hier eigentlich gelandet bist. Aber die Menschen sind lieb und haben auch nichts dagegen, wenn du hier bisschen Anarchismus in die Debatte streust."
   }
 };
 
@@ -168,11 +168,13 @@ function showResult() {
   progressBar.style.width = "100%";
 
   const winningType = getWinningType();
+  const winningScore = scores[winningType];
 
-  resultTitle.textContent = types[winningType].title;
-  resultDescription.textContent = types[winningType].description;
+  resultTitle.textContent = `Glückwunsch, du bist ${types[winningType].title}!`;
 
-  showScoreDetails();
+  resultDescription.textContent = `Das heißt: ${types[winningType].description}`;
+
+  showWinningScore(winningType, winningScore);
 }
 
 function getWinningType() {
