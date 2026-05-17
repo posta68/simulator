@@ -38,7 +38,7 @@ const questions = [
         scores: { Organizerin: 2 }
       },
       {
-        text: "Vulkan? Hier in Berlin? Dachte immer hier ist Sumpfgebiet.",
+        text: "Mehr davon!",
         scores: { Anarcho: 2 }
       }
     ]
@@ -48,18 +48,18 @@ const questions = [
     answers: [
       {
         text: "grundsätzlich nicht auszuschließen",
-        scores: { Autonomer: 2 }
-      },
-      {
-        text: "immer abzulehnen!",
-        scores: { Bündnis: 2 }
-      },
-      {
-        text: "kann bei allem außer Asylpoltik erwogen werden.",
         scores: { Organizerin: 2 }
       },
       {
-        text: "...wer hat uns verraten?",
+        text: "immer abzulehnen!",
+        scores: { Autonomer: 2 }
+      },
+      {
+        text: "kann bei allem außer Asylpoltik erwogen werden.",
+        scores: { Bündnis: 2 }
+      },
+      {
+        text: "...WER HAT UNS VERRATEN?",
         scores: { Anarcho: 2 }
       }
     ]
@@ -72,7 +72,7 @@ const questions = [
         scores: { Bündnis: 2 }
       },
       {
-        text: "...kommt es immer noch darauf an, was darin gesagt wird.",
+        text: "...kommt es immer noch darauf an, ob anschlussfähig ist, was gesagt wird.",
         scores: { Organizerin: 2 }
       },
       {
