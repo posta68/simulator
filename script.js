@@ -168,13 +168,11 @@ function showResult() {
   progressBar.style.width = "100%";
 
   const winningType = getWinningType();
-  const winningScore = scores[winningType];
 
-  resultTitle.textContent = `Glückwunsch, du bist ${types[winningType].title}!`;
+  resultTitle.textContent = types[winningType].title;
+  resultDescription.textContent = types[winningType].description;
 
-  resultDescription.textContent = `Das heißt: ${types[winningType].description}`;
-
-  showWinningScore(winningType, winningScore);
+  showScoreDetails();
 }
 
 function getWinningType() {
