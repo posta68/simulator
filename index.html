@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mein Wahlsimulator</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="start-screen" class="card">
+      <h1>Mein Wahlsimulator</h1>
+      <p>
+        Beantworte einige Fragen und finde heraus, welcher politische Typ
+        am besten zu deinen Antworten passt.
+      </p>
+      <button id="start-button">Test starten</button>
+    </section>
+
+    <section id="quiz-screen" class="card hidden">
+      <div class="progress">
+        <div id="progress-bar"></div>
+      </div>
+
+      <p id="question-counter"></p>
+      <h2 id="question-text"></h2>
+
+      <div id="answers"></div>
+    </section>
+
+    <section id="result-screen" class="card hidden">
+      <h1>Dein Ergebnis</h1>
+      <h2 id="result-title"></h2>
+      <p id="result-description"></p>
+
+      <div id="score-details"></div>
+
+      <button id="restart-button">Nochmal spielen</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
